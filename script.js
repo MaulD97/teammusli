@@ -331,22 +331,22 @@ $(document).ready(function(){
      var klausg =  klaus1 + klaus2 + klaus3 + klaus4 + klaus5 + klaus6
 
      if(klausg > maikg && klausg > meiersg && klausg > jonasg && klausg > thomasg && klausg > mopsg){
-         alert("Du bist ein Klaus");
+         alert("Du bist am ehesten HartzFEAR4Life");
      }
      else if(maikg > klausg && maikg > meiersg && maikg > jonasg && maikg > thomasg && maikg > mopsg){
-         alert("Du bist ein Maik");
+         alert("Du bist am ehesten MaulD");
      }
      else if(thomasg > klausg && thomasg > meiersg && thomasg > jonasg && thomasg > maikg && thomasg > mopsg){
-         alert("Du bist ein Thomas");
+         alert("Du bist am ehesten NoAX12");
      }
      else if(meiersg > klausg && meiersg > thomasg && meiersg > jonasg && meiersg > maikg && meiersg > mopsg){
-         alert("Du bist ein Meiers");
+         alert("Du bist am eheseten Hobbycamper666");
      }
      else if(mopsg > klausg && mopsg > thomasg && mopsg > jonasg && mopsg > maikg && mopsg > meiersg){
-         alert("Du bist ein Mops");
+         alert("Du bist am ehesten plueschkanickel");
      }
      else if(jonasg > klausg && jonasg > thomasg && jonasg > mopsg && jonasg > maikg && jonasg > meiersg){
-         alert("Du bist ein Jonas");
+         alert("Du bist am ehesten Exmatrikulat0r");
      }
      else{
          alert("Du wirst nie einer von uns sein");
