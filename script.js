@@ -49,6 +49,7 @@ $(document).ready(function(){
     var thomas1 = 0;
     var jonas1 = 0;
     var klaus1 = 0;
+    var anfrage1 = 0;
     //2.
     var meiers2 = 0;
     var maik2 = 0;
@@ -56,6 +57,7 @@ $(document).ready(function(){
     var thomas2 = 0;
     var jonas2 = 0;
     var klaus2 = 0;
+    var anfrage2 = 0;
     //3.
     var meiers3 = 0;
     var maik3 = 0;
@@ -63,6 +65,7 @@ $(document).ready(function(){
     var thomas3 = 0;
     var jonas3 = 0;
     var klaus3 = 0;
+    var anfrage3 = 0;
     //4.
     var meiers4 = 0;
     var maik4 = 0;
@@ -70,6 +73,7 @@ $(document).ready(function(){
     var thomas4 = 0;
     var jonas4 = 0;
     var klaus4 = 0;
+    var anfrage4 = 0;
     //5.
     var meiers5 = 0;
     var maik5 = 0;
@@ -77,13 +81,15 @@ $(document).ready(function(){
     var thomas5 = 0;
     var jonas5 = 0;
     var klaus5 = 0;
+    var anfrage5 = 0;
     //6.
     var meiers6 = 0;
     var maik6 = 0;
     var mops6 = 0;
     var thomas6 = 0;
     var jonas6 = 0;
-    var klaus6 = 0
+    var klaus6 = 0;     
+    var anfrage6 = 0;
     //für erstes Feld
     $('#ehrenlos1').click(function(){
      meiers1 = 0;
@@ -92,6 +98,7 @@ $(document).ready(function(){
      thomas1 = 1;
      jonas1 = 0;
      klaus1 = 0;
+     anfrage1 = 1;
     });
     $('#ehrenlos2').click(function(){
      meiers1 = 1;
@@ -100,6 +107,7 @@ $(document).ready(function(){
      thomas1 = 0;
      jonas1 = 0;
      klaus1 = 0;
+     anfrage1 = 1;
     });
     $('#ehrenlos3').click(function(){
      meiers1 = 0;
@@ -108,6 +116,7 @@ $(document).ready(function(){
      thomas1 = 0;
      jonas1 = 0;
      klaus1 = 1;
+     anfrage1=1;
     });
     $('#ehrenlos4').click(function(){
      meiers1 = 0;
@@ -116,6 +125,7 @@ $(document).ready(function(){
      thomas1 = 0;
      jonas1 = 1;
      klaus1 = 0;
+     anfrage1=1;
     });
     $('#ehrenlos5').click(function(){
      meiers1 = 0;
@@ -124,6 +134,7 @@ $(document).ready(function(){
      thomas1 = 0;
      jonas1 = 0;
      klaus1 = 0;
+     anfrage1=1;
     });
     //für zweites Feld
      $('#pos1').click(function(){
@@ -132,7 +143,8 @@ $(document).ready(function(){
      mops2 = 0;
      thomas2 = 1;
      jonas2 = 0;
-     klaus2 = 0;
+     klaus2 = 0;   
+     anfrage2 = 1;
     });
     $('#pos2').click(function(){
      meiers2 = 1;
@@ -141,6 +153,7 @@ $(document).ready(function(){
      thomas2 = 0;
      jonas2 = 0;
      klaus2 = 1;
+     anfrage2 = 1;
     });
     $('#pos3').click(function(){
      meiers2 = 0;
@@ -149,6 +162,7 @@ $(document).ready(function(){
      thomas2 = 1;
      jonas2 = 0;
      klaus2 = 1;
+     anfrage2 = 1;
     });
     $('#pos4').click(function(){
      meiers2 = 1;
@@ -157,6 +171,7 @@ $(document).ready(function(){
      thomas2 = 0;
      jonas2 = 1;
      klaus2 = 0;
+     anfrage2 = 1;
     });
     $('#pos5').click(function(){
      meiers2 = 0;
@@ -165,6 +180,7 @@ $(document).ready(function(){
      thomas2 = 0;
      jonas2 = 0;
      klaus2 = 0;
+     anfrage2 = 1;
     });
     //für drittes Feld
      $('#team1').click(function(){
@@ -174,6 +190,7 @@ $(document).ready(function(){
      thomas3 = 0;
      jonas3 = 0;
      klaus3 = 0;
+     anfrage3 = 1;
     });
      $('#team2').click(function(){
      meiers3 = 1;
@@ -182,6 +199,7 @@ $(document).ready(function(){
      thomas3 = 0;
      jonas3 = 0;
      klaus3 = 0;
+     anfrage3 = 1;
     });
      $('#team3').click(function(){
      meiers3 = 0;
@@ -190,6 +208,7 @@ $(document).ready(function(){
      thomas3 = 0;
      jonas3 = 1;
      klaus3 = 1;
+     anfrage3 = 1;
     });
      $('#team4').click(function(){
      meiers3 = 0;
@@ -198,6 +217,7 @@ $(document).ready(function(){
      thomas3 = 1;
      jonas3 = 0;
      klaus3 = 0;
+     anfrage3 = 1;
     });
      $('#team5').click(function(){
      meiers3 = 0;
@@ -206,6 +226,7 @@ $(document).ready(function(){
      thomas3 = 0;
      jonas3 = 0;
      klaus3 = 0;
+     anfrage3 = 1;
     });
     //für viertes Feld
      $('#champ1').click(function(){
@@ -215,6 +236,7 @@ $(document).ready(function(){
      thomas4 = 0;
      jonas4 = 0;
      klaus4 = 0;
+     anfrage4 = 1;
     });
      $('#champ2').click(function(){
      meiers4 = 0;
@@ -223,6 +245,7 @@ $(document).ready(function(){
      thomas4 = 1;
      jonas4 = 0;
      klaus4 = 0;
+     anfrage4 = 1;
     });
      $('#champ3').click(function(){
      meiers4 = 0;
@@ -231,6 +254,7 @@ $(document).ready(function(){
      thomas4 = 0;
      jonas4 = 0;
      klaus4 = 0;
+     anfrage4 = 1;
     });
      $('#champ4').click(function(){
      meiers4 = 0;
@@ -239,6 +263,7 @@ $(document).ready(function(){
      thomas4 = 0;
      jonas4 = 0;
      klaus4 = 0;
+     anfrage4 = 1;
     });
      $('#champ5').click(function(){
      meiers4 = 0;
@@ -247,6 +272,7 @@ $(document).ready(function(){
      thomas4 = 0;
      jonas4 = 0;
      klaus4 = 0;
+     anfrage4 = 1;
     });
     //für fünftes Feld
      $('#gut1').click(function(){
@@ -256,6 +282,7 @@ $(document).ready(function(){
      thomas5 = 0;
      jonas5 = 0;
      klaus5 = 0;
+     anfrage5 = 1;
     });
      $('#gut2').click(function(){
      meiers5 = 0;
@@ -264,6 +291,7 @@ $(document).ready(function(){
      thomas5 = 0;
      jonas5 = 0;
      klaus5 = 0;
+     anfrage5 = 1;
     });
      $('#gut3').click(function(){
      meiers5 = 0;
@@ -272,6 +300,7 @@ $(document).ready(function(){
      thomas5 = 0;
      jonas5 = 0;
      klaus5 = 0;
+     anfrage5 = 1;
     });
      $('#gut4').click(function(){
      meiers5 = 0;
@@ -280,6 +309,7 @@ $(document).ready(function(){
      thomas5 = 0;
      jonas5 = 0;
      klaus5 = 0;
+     anfrage5 = 1;
     });
      $('#gut5').click(function(){
      meiers5 = 0;
@@ -288,6 +318,7 @@ $(document).ready(function(){
      thomas5 = 1;
      jonas5 = 0;
      klaus5 = 0;
+     anfrage5 = 1;
     });
     //für sechstes Feld
      $('#minions1').click(function(){
@@ -297,6 +328,7 @@ $(document).ready(function(){
      thomas6 = 0;
      jonas6 = 0;
      klaus6 = 0;
+     anfrage6 = 1;
     });
      $('#minions2').click(function(){
      meiers6 = 1;
@@ -305,6 +337,7 @@ $(document).ready(function(){
      thomas6 = 0;
      jonas6 = 0;
      klaus6 = 0;
+     anfrage5 = 1;
     });
      $('#minions3').click(function(){
      meiers6 = 0;
@@ -313,6 +346,7 @@ $(document).ready(function(){
      thomas6 = 1;
      jonas6 = 0;
      klaus6 = 1;
+     anfrage5 = 1;
     });
      $('#minions4').click(function(){
      meiers6 = 0;
@@ -321,15 +355,17 @@ $(document).ready(function(){
      thomas6 = 0;
      jonas6 = 1;
      klaus6 = 0;
+     anfrage5 = 1;
     });
     $('#button').click(function(){
+     var gesamt = abfrage1 + anfrage2 + anfrage3 + anfrage4 + anfrage5 + anfrage6;
      var meiersg = meiers1 + meiers2 + meiers3 + meiers4 + meiers5 + meiers6
      var maikg =  maik1 + maik2 + maik3 + maik4 + maik5 + maik6
      var mopsg =  mops1 + mops2 + mops3 + mops4 + mops5 + mops6
      var thomasg =  thomas1 + thomas2 + thomas3 + thomas4 + thomas5 + thomas6
      var jonasg =  jonas1 + jonas2 + jonas3 + jonas4 + jonas5 + jonas6
      var klausg =  klaus1 + klaus2 + klaus3 + klaus4 + klaus5 + klaus6
-
+    if(gesamt = 6){
      if(klausg > maikg && klausg > meiersg && klausg > jonasg && klausg > thomasg && klausg > mopsg){
          alert("Du bist am ehesten HartzFEAR4Life");
      }
@@ -351,5 +387,6 @@ $(document).ready(function(){
      else{
          alert("Du wirst nie einer von uns sein");
      }
+    }
     });
 });
