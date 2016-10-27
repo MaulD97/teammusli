@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>M&uuml;sli News | Test</title>
+    <link rel='stylesheet' href='../stylesheet.css'/><!--link zu css-->
+    <script src="https://code.jquery.com/jquery-latest.min.js " type="text/javascript"></script>
+    <script src="../script.js" type="text/javascript"></script>
+  </head>
+  <body>
+      <nav id="nav">
+          <ul id="liste">
+              <li class="navpunkte">
+                  <a href="statistik.html" class="link">Statistiken</a>
+              </li>
+              <li class="navpunkte">
+                  <a href="stories.html" class="link">Stories</a>
+              </li>
+              <li class="navpunkte">
+                 <a href="steckbriefe.html" class="link">Steckbriefe</a>
+              </li>
+          </ul>
+      </nav>
+      <article> 
+         <a href="../index.html"><div id="elo"></div></a> 
+      </article>
+      <h1>Was f&uuml;r ein M&uuml;sli bist du?</h1>
+      <article class="testa">
+          <p class="beschreibung">1. Wie ehrenlos bist du?</p>
+          <h6 id="tipp">Tipp: ehrenlose Champs sind z.B. Yasuo, Teemo, Tryndamere, Darius, Malzahar</h6>
+          <input type="radio" class="radio" name="ehrenlos" id="ehrenlos1">Sehr ehrenlos</input><!--Thomas-->
+          <input type="radio" class="radio" name="ehrenlos" id="ehrenlos2">Ehrenlos</input><!--Meiers-->
+          <input type="radio" class="radio" name="ehrenlos" id="ehrenlos3">Normal</input><!--Klaus-->
+          <input type="radio" class="radio" name="ehrenlos" id="ehrenlos4">Nicht Ehrenlos</input><!--Maik, Jonas-->
+          <input type="radio" class="radio" name="ehrenlos" id="ehrenlos5">Voller Ehre</input><!--Mops-->
+      </article>
+      <aside>
+          <div id="ausgabe"></div>
+      </aside>
+      <article class="testa">
+          <p class="beschreibung">2. Was ist deine Lieblingsposition?</p>
+          <input type="radio" class="radio" name="pos" id="pos1">Top</input><!--Thomas, Maik-->
+          <input type="radio" class="radio" name="pos" id="pos2">Mid</input><!--Meiers, Klaus-->
+          <input type="radio" class="radio" name="pos" id="pos3">Jungle</input><!--Thomas, Klaus, Mops-->
+          <input type="radio" class="radio" name="pos" id="pos4">Bot (Carry)</input><!--Jonas, Meiers-->
+          <input type="radio" class="radio" name="pos" id="pos5">Support</input><!--Mops, Maik-->
+      </article>
+      <article class="testa">
+          <p class="beschreibung">3. Spielst du h&auml;ufiger allein oder im Team?</p>
+          <input type="radio" class="radio" name="team" id="team1">Solo Queue Main</input><!--Mops-->
+          <input type="radio" class="radio" name="team" id="team2">Rankeds allein aber normals auch mal im Team</input><!--Meiers-->
+          <input type="radio" class="radio" name="team" id="team3">Ausgeglichen</input><!--Klaus, Jonas-->
+          <input type="radio" class="radio" name="team" id="team4">Lieber im Team</input><!--Thomas-->
+          <input type="radio" class="radio" name="team" id="team5">Team Main</input><!--Maik-->
+      </article>
+      <article class="testa">
+          <p class="beschreibung">4. Welcher der genannten Champs findest du am d&uuml;mmsten?</p>
+          <input type="radio" class="radio" name="champ" id="champ1">Yasuo</input><!--Maik-->
+          <input type="radio" class="radio" name="champ" id="champ2">Tham Kench</input><!--Thomas-->
+          <input type="radio" class="radio" name="champ" id="champ3">Yorick</input><!--Mops-->
+          <input type="radio" class="radio" name="champ" id="champ4"></input>
+          <input type="radio" class="radio" name="champ" id="champ5"></input>
+      </article>
+      <article class="testa">
+          <p class="beschreibung">5. Was macht einen guten Champ aus?</p>
+          <input type="radio" class="radio" name="gut" id="gut1">Damage</input><!--Meiers-->
+          <input type="radio" class="radio" name="gut" id="gut2">Tankiness</input><!--Maik-->
+          <input type="radio" class="radio" name="gut" id="gut3">Utility</input>
+          <input type="radio" class="radio" name="gut" id="gut4">Outplay M&ouml;glichkeiten</input>
+          <input type="radio" class="radio" name="gut" id="gut5">Dummheit</input><!--Thomas-->
+      </article>
+      <article class="testa">
+          <p class="beschreibung">6. Stealst du gerne Minions?</p>
+          <input type="radio" class="radio" name="minions" id="minions1">Nein</input><!--Mops-->
+          <input type="radio" class="radio" name="minions" id="minions2">Ja</input><!--Maik, Meiers-->
+          <input type="radio" class="radio" name="minions" id="minions3">Manchmal</input><!--Thomas, Klaus-->
+          <input type="radio" class="radio" name="minions" id="minions4">Nur wenn ich tilted bin</input><!--Jonas-->
+      </article>
+      <article id="butt">
+          <div id="button">Auswerten</div>
+      </article>
+    </body>
+</html>

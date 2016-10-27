@@ -1,0 +1,264 @@
+body{
+    font-family: Verdana;
+    background-color:#d7d7d7;
+}
+
+p{
+     line-height: 1.5;
+}
+
+.farben{
+    width: 11em;
+    height: 11em;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 11em;
+    display: inline-block;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+.farben2{
+    width: 11em;
+    height: 0.5em;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0.5em;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 3em;
+    border: 13px solid #d7d7d7;
+}
+
+#farbenmaik{
+    background-color: gold;
+    border: 13px solid #ccac00;
+}
+
+#farbenthomas{
+    background-color: gold;
+    border: 13px solid #ccac00;
+}
+
+#farbenjonas{
+    background-color: gold;
+    border: 13px solid #ccac00;
+}
+
+#farbenklaus{
+    background-color: gold;
+    border: 13px solid #ccac00;
+}
+
+#farbenmeiers{
+    background-color: #c1e0ff;
+    border: 13px solid #9ab3cc;
+}
+
+#farbenmops{
+    background-color: gold;
+    border: 13px solid #ccac00;
+}
+
+.testa{
+    margin-top: 2em;
+    margin-left: 1em;
+    border:2px solid black;
+    max-width: 70em;
+    padding-bottom: 0.5em;
+    border-radius: 2em;
+}
+
+#butt{
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+#tipp{
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+h3 a:hover{
+    color: #048b9a;
+}
+
+#button{
+    width: 10em;
+    height: 3em;
+    font-size: 2em;
+    background-color:#6c524d;
+    color: #f0effa;
+    border-radius:2em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3em;       
+    box-shadow: 10px 10px 5px #888888;
+    margin-bottom: 3em;
+}
+
+#button:hover{
+    background-color: #048b9a;
+    color: black;
+    cursor: pointer;
+}
+
+.radio{
+    margin-left: 2em;
+}
+
+#wtüberschrift{
+    height: 3em;
+    width: 20em;
+    background-color: #6c524d;
+    border: 2px solid black;
+    color: #f0effa;
+}
+
+#müsli{
+    display: inline-block;
+    margin-left: 85em;
+}
+
+#artikel1{
+    margin-top: -4em;
+    max-width: 60em;
+    display: inline-block;
+}
+
+.artikel{
+    max-width: 60em;
+    display: inline-block;
+}
+
+.tüberschrift{
+    height: 3em;
+    width: 20em;
+    background-color: #6c524d;
+    border: 2px solid black;
+    color: #f0effa
+}
+
+.zeile{
+    border: 2px solid black;
+    height: 2.5em;
+    text-align: center;
+}
+
+.zeilehaupt{
+    border: 2px solid black;
+    height: 2.5em;
+    padding-left: 1em;
+}
+
+
+.link{
+    text-decoration: none;
+    color: #f0effa;
+}
+
+.navpunkte{
+    display: inline;
+    padding-left: 6em;
+    color: #f0effa;
+}
+
+@media all and (max-width: 520px){
+    .navpunkte{
+        padding-left: 3em;
+    }
+}
+
+@media all and (max-width: 380px){
+    .navpunkte{
+        display: block;
+        margin-left: 2em;
+        margin-top: 0.5em;
+    }
+}
+
+@media all and (max-width: 180px){
+    .navpunkte{
+        display: block;
+        margin-left: 0em;
+        margin-top: 0.5em;
+    }
+}
+
+#tabelle{
+    margin-top: 1em;
+    margin-left: 3em;
+    border: 2px solid black;
+    border-collapse: collapse;    
+}
+
+#tabelle2{
+    margin-top: 1em;
+    margin-left: 3em;
+    border: 2px solid black;
+    border-collapse: collapse;    
+}
+
+#duud{
+    font-size: 10em;
+    text-align: center;
+}
+
+#elo{
+    margin-left: -0.5em;
+    margin-top: 1em;
+    width: 100%;
+    width: 99.1vw;
+    height: 20em;
+    background-color: black;
+}
+
+h2{
+    margin-left: 1.2em;
+}
+
+p{
+    margin-left: 1.2em;
+}
+
+#nav{
+    background-color: #6c524d;
+    margin-left: -0.5em;
+    height: 4em;
+    width: 100%;
+    width: 99.1vw;
+}
+
+@media all and (max-width: 380px){
+    #nav{
+        height: 5.5em;
+    }
+}
+
+#liste{
+    list-style-type: none;
+    margin-left: 7em;
+    margin-top: -0.5em;
+    padding-top: 2em;
+}
+
+@media all and (max-width: 1024px){
+    #liste{
+        margin-left:-5em;
+    }
+}
+
+@media all and (max-width: 380px){
+    #liste{
+        padding-top: 0.5em;
+        margin-left:-5em;
+    }
+}
