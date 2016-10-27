@@ -1,0 +1,39 @@
+.satz{
+    font-family: Arial;
+    font-size: 1em;
+    color: black;
+    margin-left: 3em;
+    color: #818081;
+}
+
+#info{
+    margin-top: 4em;
+    font-family: Arial;
+    margin-left: 2em;
+    color: #818081;
+    display: inline-block;
+}
+
+
+
+#canvas1{
+    margin-top: 2em;
+    display: inline-block;
+    margin-left: 40em;
+    margin-top: -33.6em;
+    position: relative;
+}
+
+#uber{
+    font-family: Arial;
+    color: #818081;
+    margin: auto;
+    display: block;
+    position: relative;
+    margin-left: 25em;
+    margin-top: 1em;
+}
+
+body{
+    background-color: #404040;
+}

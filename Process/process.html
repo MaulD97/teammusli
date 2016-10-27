@@ -1,0 +1,320 @@
+<html>
+  <head>
+    <title>Megaballer</title>
+    <link rel='stylesheet' href='process.css'/><!--link zu css-->
+    <script type="text/javascript" src="processing.js"></script><!--link zu processing.js-->
+    <script type="text/javascript" src="init.js"></script><!--link zu init.js-->
+  </head>
+  <body> <!-- start von processing.js-->
+    <h1 id="uber">Megaballer</h1>
+    <h2 id="info">Informationen:</h2>
+    <p class="satz">Mit einem Klick ins Feld kann man das Spiel starten.</p>
+    <p class="satz">Das untere Brett mit der Maus bewegen.</p>
+    <p class="satz">Das obere bewegt sich automatisch.</p>
+    <p class="satz">Man bekommt immer einen Punkt wenn der Ball das obere Brett ber&uuml;hrt.</p>
+    <p class="satz">Der Ball wird immer schneller.</p>
+    <p class="satz">Fliegt der Ball neben dem unteren Brett auf den Boden ist das Spiel vorbei.</p>
+    <p class="satz">Er startet immer bei einer zuf&auml;lligen X Position.</p>
+    <p class="satz">Aber er bewegt sich immer zuerst nach unten.</p>
+    <p class="satz">Ziel ist es m&ouml;glichst viele Punkte zu erreichen.</p>
+    <p class="satz">Ist der Ball auf den Boden aufgekommen kann man mit einem Klick neu starten.</p>
+    <p class="satz">Neben dem Feld sind ein paar Einstellungen zum rumspielen.</p>
+    <p class="satz">Die Standarteinstellungen sind geschw.X = 6 und geschw.Y = 6.</p>
+    <script type="application/processing">
+   void setup() {   //das Setup des Programms also allgemeine einstellungen
+        size(1000, 980);
+  
+    }
+    fill(0, 0, 0);
+    textSize(50);
+
+    var currentScene;
+    var hintergrund;
+    var name;
+    var x;
+    var eFarbe;
+    var padFarbe;
+    var c = 100;
+    var a = 500;
+    var speed;
+    var speed2;
+    var p = random(12, 488);
+    a = 80;
+    var f;
+    var info = 1;
+    var startX = 6;
+    var startY  = 6;
+    var color1 = #ffffff;
+    var color2 = #f1bc41;
+    var color3 = #ffffff;
+    var color4 = #ffffff;
+    var color5 = #ffffff;
+    var color6 = #f1bc41;
+    var color7 = #ffffff;
+    var color8 = #ffffff;
+    var color9 = #b43a32;;
+    var color10 = #ffffff;
+    var zuwachsp = random(0,0.2);
+    var zuwachsq = random(0,0.2);
+
+var drawEllipse = function() {
+    fill(#c0c0c0);
+    ellipse(c,a,25,25);
+}
+    p = 0;
+    q = 0;
+    speed = p;
+    speed2 = q;
+    
+    void draw(){
+    f = c;
+    background(hintergrund);
+    fill(0);
+    text(info, 40,120);
+    strokeWeight(3.0);
+    fill(padFarbe);
+    if(mouseX < 520){
+    rect(mouseX - 75, 950, 150, 25);
+    }
+    rect(f -75, 30, 150, 25);
+    if(currentScene === 2){
+        drawEllipse();
+    }
+    stroke(#404040);
+    strokeWeight(100.0);
+    line(550, 0, 550, 1000);
+
+    fill(color1); //100x
+    strokeWeight(3.0);
+    rect(650, 50, 120, 50);
+    fill(0);
+    textSize(15);
+    text("geschw.X = 100", 660,80);
+
+    fill(color2); //6x
+    strokeWeight(3.0);
+    rect(650, 110, 120, 50);
+    fill(0);
+    textSize(15);
+    text("geschw.X = 6", 660,140);
+
+    fill(color3); //0.5x
+    strokeWeight(3.0);
+    rect(650, 170, 120, 50);
+    fill(0);
+    textSize(15);
+    text("geschw.X = 0.5", 660,200);
+
+    fill(color4); //0x
+    strokeWeight(3.0);
+    rect(650, 230, 120, 50);
+    fill(0);
+    textSize(15);
+    text("geschw.X = 0", 660,260);
+
+    fill(color5); //100y
+    strokeWeight(3.0);
+    rect(800, 50, 120, 50);
+    fill(0);
+    textSize(15);
+    text("geschw.Y = 100", 810,80);
+
+    fill(color6); //6y
+    strokeWeight(3.0);
+    rect(800, 110, 120, 50);
+    fill(0);
+    textSize(15);
+    text("geschw.Y = 6", 810,140);
+
+    fill(color7); //0.5y
+    strokeWeight(3.0);
+    rect(800, 170, 120, 50);
+    fill(0);
+    textSize(15);
+    text("geschw.Y = 0.5", 810,200);
+
+    fill(color8); //0y
+    strokeWeight(3.0);
+    rect(800, 230, 120, 50);
+    fill(0);
+    textSize(15);
+    text("geschw.Y = 0", 810,260);
+
+    fill(color9); //normal
+    strokeWeight(3.0);
+    rect(730, 400, 120, 50);
+    fill(0);
+    textSize(15);
+    text("Normal Mode", 740,430);
+
+    fill(color10); //insanity
+    strokeWeight(3.0);
+    rect(730, 460, 120, 50);
+    fill(0);
+    textSize(15);
+    text("Insanity Mode", 740, 490);
+
+    textSize(20);
+    text("Geschwindigkeit X: "+p, 750,600);
+    text("Geschwindigkeit Y: "+q, 750,630);
+
+    if(mouseX < 550){
+    noCursor();  //man sieht die maus nicht
+    }
+    else{
+    cursor(CROSS);
+    }
+    if(c > 488 && currentScene === 2){
+      if(speed2 >0){
+        speed = -p;
+        speed2 = +q;
+        p += zuwachsp;
+        q += zuwachsq;
+        }
+        else{
+        speed2 = -q;
+        speed = -p;
+
+        p += zuwachsp;
+        q += zuwachsq;
+        } 
+    } 
+    else if(c < 12 && currentScene === 2){
+      if(speed2 > 0){
+        speed = +p;
+        speed2 = +q;
+        p += zuwachsp;
+        q += zuwachsq;
+        }
+        else{
+        speed2 = -q;
+        speed = +p;
+
+        p += zuwachsp;
+        q += zuwachsq;
+        }
+    }
+    else if( a > 938 && mouseX < c + 75 && mouseX > c -75 && currentScene === 2){;
+    speed2 = -q;
+    }
+    else if( a < 60 && f < c + 75 && f > c -75 && currentScene === 2){
+    speed2 = +q;
+    info += 1;
+    }
+    else if( a > 970 && currentScene === 2){
+    p = 0;
+    q = 0;
+    speed = 0;
+    speed2 = 0;
+    }
+    else if( a < 10 && currentScene === 2){
+    p = 0;
+    q = 0;
+    speed = 0;
+    speed2 = 0;
+    }
+    else if(a < 12 && currentScene === 2){
+    speed2 = +q;
+    }
+    c = c + speed;
+    a = a + speed2;
+    }
+
+
+var drawScene2 =function(){
+    currentScene = 2;
+    hintergrund = #608193;
+    name = "Beenden";
+    bFarbe = #01deff;
+    btFarbe = #01deff;
+    oFarbe = #01deff;
+    otFarbe = #01deff;
+    eFarbe = #01deff;
+    padFarbe = #526360;
+
+};
+
+drawScene2();
+
+void mouseClicked(){
+    if(mouseX < 550){
+    c = random(12, 488);
+    a = 80;
+    p = startX;
+    q = startY;
+    speed=p;
+    speed2=q;
+    info = 1;
+    }
+    if(mouseX > 650 && mouseX < 770 && mouseY > 50 && mouseY < 100){
+    startX = 100000;
+    color1 = #f1bc41;
+    color2 = #ffffff;
+    color3 = #ffffff;
+    color4 = #ffffff;
+    }
+    else if(mouseX > 650 && mouseX < 770 && mouseY > 110 && mouseY < 160){
+    startX = 6;
+    color2 = #f1bc41;
+    color1 = #ffffff;
+    color3 = #ffffff;
+    color4 = #ffffff;
+    }
+    else if(mouseX > 650 && mouseX < 770 && mouseY > 170 && mouseY < 220){
+    startX = 0.1;
+    color3 = #f1bc41;
+    color2 = #ffffff;
+    color1 = #ffffff;
+    color4 = #ffffff;
+    }
+    else if(mouseX > 650 && mouseX < 770 && mouseY > 230 && mouseY < 270){
+    startX = 0;
+    color4 = #f1bc41;
+    color2 = #ffffff;
+    color3 = #ffffff;
+    color1 = #ffffff;
+    }
+    else if(mouseX > 800 && mouseX < 920 && mouseY > 50 && mouseY < 100){
+    startY = 100000;
+    color5 = #f1bc41;
+    color6 = #ffffff;
+    color7 = #ffffff;
+    color8 = #ffffff;
+    }
+    else if(mouseX > 800 && mouseX < 920 && mouseY > 110 && mouseY < 160){
+    startY = 6;
+    color6 = #f1bc41;
+    color5 = #ffffff;
+    color7 = #ffffff;
+    color8 = #ffffff;
+    }
+    else if(mouseX > 800 && mouseX < 920 && mouseY > 170 && mouseY < 220){
+    startY = 0.1;
+    color7 = #f1bc41;
+    color6 = #ffffff;
+    color5 = #ffffff;
+    color8 = #ffffff;
+    }
+    else if(mouseX > 800 && mouseX < 920 && mouseY > 230 && mouseY < 280){
+    startY = 0;
+    color8 = #f1bc41;
+    color6 = #ffffff;
+    color7 = #ffffff;
+    color5 = #ffffff;
+    }
+    else if(mouseX > 730 && mouseX < 850 && mouseY > 400 && mouseY < 450){
+    zuwachsp = random(0,0.2);
+    zuwachsq = random(0,0.2);
+    color9 = #b43a32;
+    color10 = #ffffff;
+    }
+    else if(mouseX > 730 && mouseX < 850 && mouseY > 460 && mouseY < 510){
+    zuwachsp = random(0,6);
+    zuwachsq = random(0,6);
+    color10 = #b43a32;
+    color9 = #ffffff;
+    }
+}
+    </script><canvas id="canvas1"></canvas>
+  </body>
+</html>
