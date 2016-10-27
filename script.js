@@ -365,7 +365,7 @@ $(document).ready(function(){
      var thomasg =  thomas1 + thomas2 + thomas3 + thomas4 + thomas5 + thomas6
      var jonasg =  jonas1 + jonas2 + jonas3 + jonas4 + jonas5 + jonas6
      var klausg =  klaus1 + klaus2 + klaus3 + klaus4 + klaus5 + klaus6
-    if(gesamt = 6){
+    if(gesamt == 6){
      if(klausg > maikg && klausg > meiersg && klausg > jonasg && klausg > thomasg && klausg > mopsg){
          alert("Du bist am ehesten HartzFEAR4Life");
      }
@@ -387,6 +387,9 @@ $(document).ready(function(){
      else{
          alert("Du wirst nie einer von uns sein");
      }
+    }
+    else{
+        alert("Bitte alle sechs Fragen beantworten");
     }
     });
 });
