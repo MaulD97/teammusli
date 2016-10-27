@@ -337,7 +337,7 @@ $(document).ready(function(){
      thomas6 = 0;
      jonas6 = 0;
      klaus6 = 0;
-     anfrage5 = 1;
+     anfrage6 = 1;
     });
      $('#minions3').click(function(){
      meiers6 = 0;
@@ -346,7 +346,7 @@ $(document).ready(function(){
      thomas6 = 1;
      jonas6 = 0;
      klaus6 = 1;
-     anfrage5 = 1;
+     anfrage6 = 1;
     });
      $('#minions4').click(function(){
      meiers6 = 0;
@@ -355,17 +355,17 @@ $(document).ready(function(){
      thomas6 = 0;
      jonas6 = 1;
      klaus6 = 0;
-     anfrage5 = 1;
+     anfrage6 = 1;
     });
     $('#button').click(function(){
-     var gesamt = abfrage1 + anfrage2 + anfrage3 + anfrage4 + anfrage5 + anfrage6;
+     var gesamt = anfrage1 + anfrage2 + anfrage3 + anfrage4 + anfrage5 + anfrage6;
      var meiersg = meiers1 + meiers2 + meiers3 + meiers4 + meiers5 + meiers6
      var maikg =  maik1 + maik2 + maik3 + maik4 + maik5 + maik6
      var mopsg =  mops1 + mops2 + mops3 + mops4 + mops5 + mops6
      var thomasg =  thomas1 + thomas2 + thomas3 + thomas4 + thomas5 + thomas6
      var jonasg =  jonas1 + jonas2 + jonas3 + jonas4 + jonas5 + jonas6
      var klausg =  klaus1 + klaus2 + klaus3 + klaus4 + klaus5 + klaus6
-    if(gesamt == 6){
+    if(gesamt >= 6){
      if(klausg > maikg && klausg > meiersg && klausg > jonasg && klausg > thomasg && klausg > mopsg){
          alert("Du bist am ehesten HartzFEAR4Life");
      }
@@ -389,7 +389,7 @@ $(document).ready(function(){
      }
     }
     else{
-        alert("Bitte alle sechs Fragen beantworten");
+        alert("Bitte beantworte alle Fragen");
     }
     });
 });
