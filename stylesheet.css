@@ -101,11 +101,17 @@ p{
     border: 13px solid #ccac00;
 }
 
-
+#farbenthomas:hover{
+     background-color: #cd7f32;  
+}
 
 #farbenjonas{
     background-color: gold;
     border: 13px solid #ccac00;
+}
+
+#farbenjonas:hover{
+     background-color: #cd7f32;  
 }
 
 #farbenklaus{
@@ -113,14 +119,26 @@ p{
     border: 13px solid #ccac00;
 }
 
+#farbenklaus:hover{
+     background-color: #cd7f32;  
+}
+
 #farbenmeiers{
     background-color: #c1e0ff;
     border: 13px solid #9ab3cc;
 }
 
+#farbenmeiers:hover{
+     background-color: #cd7f32;  
+}
+
 #farbenmops{
     background-color: gold;
     border: 13px solid #ccac00;
+}
+
+#farbenmops:hover{
+     background-color: #cd7f32;  
 }
 
 .testa{
