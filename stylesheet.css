@@ -2,6 +2,14 @@ html{
     height: 100%;
 }
 
+#artikel1 p{
+ margin-left: 4em;   
+}
+
+.artikel p{
+ margin-left: 4em;   
+}
+
 .kreis{
     display: inline-block; 
     height: 22em;  
