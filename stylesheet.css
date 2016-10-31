@@ -70,6 +70,7 @@ p{
     height: 20em;
     margin-left: 3em;
     display: inline-block;
+    border: 2px solid black;
 }
 
 .farben2{
