@@ -2,6 +2,10 @@ html{
     height: 100%;
 }
 
+#foot{
+ font-size: 0.5em;   
+}
+
 body{
     font-family: Verdana;
     background-color:#d7d7d7;
