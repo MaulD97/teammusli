@@ -92,10 +92,16 @@ p{
     border: 13px solid #ccac00;
 }
 
+#farbenmaik:hover{
+ background-color: #cd7f32;   
+}
+
 #farbenthomas{
     background-color: gold;
     border: 13px solid #ccac00;
 }
+
+
 
 #farbenjonas{
     background-color: gold;
