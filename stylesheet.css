@@ -2,6 +2,10 @@ html{
     height: 100%;
 }
 
+.kreis{
+    display: inline-block;   
+}
+
 #hilfe{
     color: #d7d7d7;
 }
@@ -16,7 +20,7 @@ body{
 }
 
 p{
-     line-height: 1.5;
+    line-height: 1.5;
 }
 
 .farben{
