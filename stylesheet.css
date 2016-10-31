@@ -6,6 +6,11 @@ html{
  margin-left: 4em;   
 }
 
+.rahmen{
+ margin-top: 5em;
+    display: inline-block;
+}
+
 .artikel p{
  margin-left: 4em;   
 }
