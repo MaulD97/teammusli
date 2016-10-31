@@ -1,10 +1,10 @@
+html{
+    height: 100%;
+}
+
 body{
     font-family: Verdana;
     background-color:#d7d7d7;
-}
-
-#foot{
-    font-size: 12px;   
 }
 
 p{
@@ -23,6 +23,11 @@ p{
     margin-left: 5.6em;
 }
 
+#video{
+    width: 30em;
+    height: 20em;
+}
+
 .farben2{
     width: 11em;
     height: 0.5em;
@@ -35,6 +40,11 @@ p{
     margin-bottom: 2em;
     margin-left: 5.6em;
     border: 13px solid #d7d7d7;
+}
+
+.profillink{
+    text-decoration: none;
+    color: black;
 }
 
 #farbenmaik{
@@ -88,7 +98,8 @@ p{
 
 h3 a{
     text-decoration: none;
-    color: black;
+    color: #f0effa;
+    margin-left: 1em;
 }
 
 h3 a:hover{
@@ -130,10 +141,15 @@ h3 a:hover{
 #müsli{
     display: inline-block;
     margin-left: 85em;
+    background-color:#6c524d;
+    width: 33.45em;
+    position: absolute;
+    height: 40em;
+    border-radius: 0px 0px 0px 100px;
 }
 
 #artikel1{
-    margin-top: -4em;
+    margin-top: 1em;
     max-width: 60em;
     display: inline-block;
 }
