@@ -3,12 +3,20 @@ html{
 }
 
 #artikel1 p{
- margin-left: 4em;   
+    margin-left: 4em;   
+}
+
+#videoansage{
+    margin-top: 5em;   
 }
 
 .rahmen{
- margin-top: 5em;
     display: inline-block;
+}
+
+.videobeschreibung{
+    margin-left: 2em;
+    margin-bottom: 1em;
 }
 
 .artikel p{
