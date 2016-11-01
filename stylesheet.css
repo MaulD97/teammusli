@@ -210,6 +210,7 @@ h3 a:hover{
     position: absolute;
     height: 40em;
     border-radius: 0px 0px 0px 100px;
+    float: right;
 }
 
 #artikel1{
