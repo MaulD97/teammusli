@@ -406,6 +406,6 @@ $(document).ready(function(){
     }).scroll();
 });*/
 
-    $('<h3><a href=\'../subpages/stories\' class = \'link\'">Verrückte Geschichten</a></h3>').appendTo("#müsli").css("margin-top", "2em").css("margin-left", "0.8em");
+    $('<h3><a href=\'../subpages/stories\' class = \'link\'">Verrückte Geschichten</a></h3>').appendTo("#müsli").css("margin-top", "2em");
     $('<p>Hier gehts zu den Geschichten der Jungs</p>').appendTo("#müsli").css("color" ,"#f0effa").css("margin-left", "1em").css("margin-top","1em");
 });
