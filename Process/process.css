@@ -37,3 +37,20 @@
 body{
     background-color: #404040;
 }
+
+@media all and (max-width: 1000px){
+    #uber{
+        display: none;
+    }
+    #info{
+        display: none;
+    }
+     p{
+        display: none;
+    }
+
+    #canvas1{
+        margin-top: 5em;
+        margin-left: -0.5em;
+    }
+}
