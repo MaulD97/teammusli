@@ -30,7 +30,8 @@ html{
 .kreis{
     display: inline-block; 
     height: 22em;  
-    margin-bottom: 3em;
+    margin-top: -1em;
+    margin-bottom: 2em;
 }
 
 .kreislinks{
@@ -42,8 +43,20 @@ html{
     color: #d7d7d7;
 }
 
-#foot{
+footer{
+    width: 100%;
     font-size: 0.7em;   
+    bottom: inherit;
+    background-color: #6c524d;
+    margin-left: -0.7em;
+    margin-bottom: -0.5em;
+    height: 10em;
+    margin-top: 13.8em;
+    position: absolute;
+}
+
+#foot{
+    margin-top: 8em;
 }
 
 body{
@@ -65,7 +78,7 @@ p{
     vertical-align: middle;
     line-height: 11em;
     display: inline-block;
-    margin-top: 5em;
+    margin-top: 3em;
     margin-left: 5.6em;
 }
 
@@ -74,12 +87,12 @@ p{
     height: 20em;
     margin-left: 3em;
     display: inline-block;
+    margin-top: 1em;
 }
 
 .farben2{
     vertical-align: middle;
-    margin-left: 9.5em;
-    margin-top: 1em;
+    margin-left: 9.5em
 }
 
 .profillink{
@@ -203,12 +216,12 @@ h3 a:hover{
 }
 
 #müsli{
-    clear: both;
+    position: relative;
     float: right;
     margin-right: -0.5em;
     background-color:#6c524d;
     width: 33.45em;
-    height: 85em;
+    min-height: 100em;
     border-radius: 0px 0px 0px 100px;
 }
 
