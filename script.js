@@ -407,5 +407,5 @@ $(document).ready(function(){
 });*/
 
     $('<h3><a href=\'../subpages/stories\' class = \'link\'">Verrückte Geschichten</a></h3>').appendTo("#müsli").css("margin-top", "2em");
-    $('<p>Hier gehts zu den Geschichten der Jungs</p>').appendTo("#müsli").css("color" ,"#f0effa").css("margin-left", "1em").css("margin-top","1em");
+    $('<p>Hier gehts zu den Geschichten der Jungs. Eine seltsamer als die andere aber dennoch alle wahr. Die Autoren möchten aus Sicherheitsgründen Anonym bleiben (Es sind Maik und Thomas).</p>').appendTo("#müsli").css("color" ,"#f0effa").css("margin-left", "1em").css("margin-top","1em");
 });
