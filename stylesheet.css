@@ -316,6 +316,13 @@ h3 a:hover{
     border-collapse: collapse;    
 }
 
+#tabelle3{
+    margin-top: 1em;
+    margin-left: 3em;
+    border: 2px solid black;
+    border-collapse: collapse;    
+}
+
 #duud{
     font-size: 10em;
     text-align: center;
