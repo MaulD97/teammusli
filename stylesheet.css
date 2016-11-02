@@ -203,13 +203,13 @@ h3 a:hover{
 }
 
 #müsli{
-    display: inline-block;
+    clear: both;
+    float: right;
+    margin-right: -0.5em;
     background-color:#6c524d;
     width: 33.45em;
-    position: absolute;
     height: 40em;
     border-radius: 0px 0px 0px 100px;
-    margin-left: 100em;
 }
 
 #artikel1{
