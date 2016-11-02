@@ -393,7 +393,7 @@ $(document).ready(function(){
     }
     });
     
-    $('<a href=\'../subpages/stories\'><h3>Verrückte Geschichten</h3></a>').appendTo("#müsli").css("color" ,"#f0effa").css("margin-top", "2em").css("margin-left", "2em").css("text-decoration", "none");
+    $('<a href=\'../subpages/stories\'>Verrückte Geschichten</a>').appendTo("#müsli").css("color" ,"#f0effa").css("margin-top", "2em").css("margin-left", "2em").css("text-decoration", "none");
     $('<p>Hier gehts zu den Geschichten der Jungs</p>').appendTo("#müsli").css("color" ,"#f0effa").css("margin-left", "1em").css("margin-top","-1em");
     
 });
