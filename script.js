@@ -412,13 +412,13 @@ $(document).ready(function(){
     
  //videoseinstellungen   
 $(document).ready(function(){
-    $(".video").after("<div class=\'button\'><img src=\'../Media/play.png\'class=\'bild1\'/><img src=\'../Media/pause.png\' class=\'bild2\'/><img src=\'../Media/left.png\' class=\'bild3\'/></div>");
+    $(".video").after("<div class=\'buttun\'><img src=\'../Media/play.png\'class=\'bild1\'/><img src=\'../Media/pause.png\' class=\'bild2\'/><img src=\'../Media/left.png\' class=\'bild3\'/></div>");
     $(".button").after("<div class=\'sound\'><img src=\'../Media/sound.png\'class=\'bild4\'/><img src=\'../Media/mute.png\' class=\'bild5\'/></div>");
 $(".videocontainer").each(function () {
     
     var video = $(this).find(".video");
     var plainVideo = video.get(0);/*DOM video object, unwrapped from jQuery*/
-    var playBtn = $(this).find(".button");
+    var playBtn = $(this).find(".buttun");
     var playBild = $(this).find(".bild1");
     var pauseBild = $(this).find(".bild2");
     var replayBild = $(this).find(".bild3");
