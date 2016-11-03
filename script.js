@@ -411,19 +411,38 @@ $(document).ready(function(){
     $(".video").prop('muted', true);
     
  //videoseinstellungen   
-$(".video").after("<div class=\'buttun\'><img src=\'../Media/play.png\'class=\'bild1\'/><img src=\'../Media/pause.png\' class=\'bild2\'/><img src=\'../Media/left.png\' class=\'bild3\'/></div>");
+$(document).ready(function(){
+    $(".video").after("<div class=\'button\'><img src=\'play.png\'class=\'bild1\'/><img src=\'pause.png\' class=\'bild2\'/><img src=\'left.png\' class=\'bild3\'/></div>");
+    $(".button").after("<div class=\'sound\'><img src=\'sound.png\'class=\'bild4\'/><img src=\'mute.png\' class=\'bild5\'/></div>");
 $(".videocontainer").each(function () {
     
     var video = $(this).find(".video");
     var plainVideo = video.get(0);/*DOM video object, unwrapped from jQuery*/
-    var playBtn = $(this).find(".buttun");
+    var playBtn = $(this).find(".button");
     var playBild = $(this).find(".bild1");
     var pauseBild = $(this).find(".bild2");
     var replayBild = $(this).find(".bild3");
+    var soundBtn = $(this).find(".sound");
+    var soundBild = $(this).find(".bild4");
+    var muteBild = $(this).find(".bild5");
 
+    soundBild.show();
+    muteBild.hide();
     playBild.show();
     pauseBild.hide();
     replayBild.hide();
+
+    soundBtn.click(function(){
+        if(muteBild.is(":hidden")){
+            $(".video").prop('muted', true);
+            soundBild.hide();
+            muteBild.show();
+        }else if(soundBild.is(":hidden")){
+            $(".video").prop('muted', false);
+            soundBild.show();
+            muteBild.hide();
+        }
+    });
 
     playBtn.click(function () {
         if(pauseBild.is(':hidden')){
@@ -439,11 +458,12 @@ $(".videocontainer").each(function () {
             replayBild.hide()
         }
 
-        function myHandler(e) {
+        function myHandler() {
             playBild.hide();
             pauseBild.hide();
             replayBild.show();
         }
     });
-});
+
+ });
 });
