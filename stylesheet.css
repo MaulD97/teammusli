@@ -14,6 +14,28 @@ html{
     margin-top: 4em;
 }
 
+.gabe{
+    width: 200px;
+    height: 70px;
+    border-radius: 20em;
+    background-color: #6c524d;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: 5px 2px 5px #888888;
+    margin-left: 5em;
+}
+
+.gabe2{
+    width: 200px;
+    height: 70px;
+    border-radius: 20em;
+    background-color: #6c524d;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: 5px 2px 5px #888888;
+    margin-left: 5em;
+}
+
 .sound{
     width: 70px;
     height: 70px;
