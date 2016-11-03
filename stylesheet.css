@@ -2,6 +2,32 @@ html{
     height: 100%;
 }
 
+.buttun{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #6c524d;
+    text-align: center;
+    padding-top: 5px;
+    box-shadow: 5px 2px 5px #888888;
+}
+
+.bild1{
+    display: inline;
+    position: relative;
+    margin-left: 4px;
+}
+
+.bild2{
+    display: inline;
+    position: relative;
+}
+
+.bild3{
+    display: inline;
+    position: relative;
+}
+
 #artikel1 p{
     margin-left: 4em;   
 }
