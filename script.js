@@ -409,4 +409,41 @@ $(document).ready(function(){
     $('<h3><a href=\'../subpages/stories\' class = \'link\'">Verrückte Geschichten</a></h3>').appendTo("#müsli").css("margin-top", "2em");
     $('<p>Hier gehts zu den Geschichten der Jungs. Eine seltsamer als die andere aber dennoch alle wahr. Die Autoren möchten aus Sicherheitsgründen anonym bleiben (es sind Maik und Thomas).</p>').appendTo("#müsli").css("color" ,"#f0effa").css("margin-left", "1em").css("margin-top","1em");
     $(".video").prop('muted', true);
+    
+ //videoseinstellungen   
+$(".video").after("<div class=\'buttun\'><img src=\'../Media/play.png\'class=\'bild1\'/><img src=\'../Media/pause.png\' class=\'bild2\'/><img src=\'../Media/left.png\' class=\'bild3\'/></div>");
+$(".videocontainer").each(function () {
+    
+    var video = $(this).find(".video");
+    var plainVideo = video.get(0);/*DOM video object, unwrapped from jQuery*/
+    var playBtn = $(this).find(".buttun");
+    var playBild = $(this).find(".bild1");
+    var pauseBild = $(this).find(".bild2");
+    var replayBild = $(this).find(".bild3");
+
+    playBild.show();
+    pauseBild.hide();
+    replayBild.hide();
+
+    playBtn.click(function () {
+        if(pauseBild.is(':hidden')){
+            video.get(0).addEventListener('ended',myHandler,false);
+            plainVideo.play();
+            playBild.hide();
+            pauseBild.show();
+            replayBild.hide();
+        }else if(playBild.is(":hidden")){
+            plainVideo.pause();
+            playBild.show();
+            pauseBild.hide();
+            replayBild.hide()
+        }
+
+        function myHandler(e) {
+            playBild.hide();
+            pauseBild.hide();
+            replayBild.show();
+        }
+    });
+});
 });
