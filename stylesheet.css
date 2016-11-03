@@ -26,6 +26,10 @@ html{
     margin-left: 14em;
 }
 
+.sound:hover{
+    cursor: pointer;   
+}
+
 .buttun{
     width: 70px;
     height: 70px;
