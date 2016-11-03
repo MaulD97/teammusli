@@ -412,7 +412,12 @@ $(document).ready(function(){
 $(document).ready(function(){
     $(".video").after("<div class=\'buttun\'><img src=\'../Media/play.png\'class=\'bild1\'/><img src=\'../Media/pause.png\' class=\'bild2\'/><img src=\'../Media/left.png\' class=\'bild3\'/></div>");
     $(".buttun").after("<div class=\'sound\'><img src=\'../Media/sound.png\'class=\'bild4\'/><img src=\'../Media/mute.png\' class=\'bild5\'/></div>");
-$(".videocontainer").each(function () {
+    $(".sound").after("<div class=\'gabe\'></div>");
+    $(".sound").after("<div class=\'gabe2\'></div>");
+    $("<p id=\'dauer\'></p>").prependTo(".gabe");
+    $("<p id=\'dauer2\'></p>").prependTo(".gabe2");
+    
+    $(".videocontainer").each(function () {
     
     var video = $(this).find(".video");
     var plainVideo = video.get(0);/*DOM video object, unwrapped from jQuery*/
@@ -423,7 +428,26 @@ $(".videocontainer").each(function () {
     var soundBtn = $(this).find(".sound");
     var soundBild = $(this).find(".bild4");
     var muteBild = $(this).find(".bild5");
+    var anzeige = $(this).find("#dauer");
+    var anzeige2 = $(this).find("#dauer2");
+    var laenge = video.duration;
 
+    video.on('loadedmetadata', function() {
+        if(Math.round(video[0].duration) < 10){
+         $(anzeige2).text("00:0"+Math.round(video[0].duration));
+        }else if(Math.round(video[0].duration) < 60 && Math.round(video[0].duration) > 10){
+         $(anzeige2).text("00:"+Math.round(video[0].duration));  
+        }
+    });
+
+    video.on('timeupdate', function() {
+        if(Math.round(video[0].currentTime) < 10){
+            $(anzeige).text("00:0"+Math.round(video[0].currentTime));
+        }else if(Math.round(video[0].currentTime) < 60 && Math.round(video[0].currentTime) > 9){
+            $(anzeige).text("00:"+Math.round(video[0].currentTime));  
+        }
+    });    
+        
     soundBild.show();
     muteBild.hide();
     playBild.show();
