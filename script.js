@@ -414,7 +414,7 @@ $(document).ready(function(){
     $(".buttun").after("<div class=\'sound\'><img src=\'../Media/sound.png\'class=\'bild4\'/><img src=\'../Media/mute.png\' class=\'bild5\'/></div>");
     $(".sound").after("<div class=\'gabe\'></div>");
     $(".sound").after("<div class=\'gabe2\'></div>");
-    $("<p id=\'dauer\'></p>").prependTo(".gabe2");
+    $("<p id=\'dauer\'>00:00</p>").prependTo(".gabe2");
     $("<p id=\'dauer2\'>00:00</p>").prependTo(".gabe");
     
     $(".videocontainer").each(function () {
