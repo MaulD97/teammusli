@@ -7,6 +7,12 @@ html{
     width: 40em;
 }
 
+#videoname {
+    margin-left: 7em;
+    font-size: 20px;
+    margin-bottom: -0.5em;
+}
+
 .buttun{
     width: 70px;
     height: 70px;
@@ -123,7 +129,7 @@ p{
 .video{
     margin-left: 3em;
     display: inline-block;
-    margin-top: 1em;
+    margin-top: 4em;
     width: 640px;
     height: 360px;
 }
