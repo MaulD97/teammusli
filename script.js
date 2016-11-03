@@ -412,8 +412,8 @@ $(document).ready(function(){
     
  //videoseinstellungen   
 $(document).ready(function(){
-    $(".video").after("<div class=\'button\'><img src=\'play.png\'class=\'bild1\'/><img src=\'pause.png\' class=\'bild2\'/><img src=\'left.png\' class=\'bild3\'/></div>");
-    $(".button").after("<div class=\'sound\'><img src=\'sound.png\'class=\'bild4\'/><img src=\'mute.png\' class=\'bild5\'/></div>");
+    $(".video").after("<div class=\'button\'><img src=\'../Media/play.png\'class=\'bild1\'/><img src=\'../Media/pause.png\' class=\'bild2\'/><img src=\'../Media/left.png\' class=\'bild3\'/></div>");
+    $(".button").after("<div class=\'sound\'><img src=\'../Media/sound.png\'class=\'bild4\'/><img src=\'../Media/mute.png\' class=\'bild5\'/></div>");
 $(".videocontainer").each(function () {
     
     var video = $(this).find(".video");
