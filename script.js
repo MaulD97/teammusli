@@ -409,7 +409,7 @@ $(document).ready(function(){
     $('<h3><a href=\'../subpages/stories\' class = \'link\'">Verrückte Geschichten</a></h3>').appendTo("#müsli").css("margin-top", "2em");
     $('<p>Hier gehts zu den Geschichten der Jungs. Eine seltsamer als die andere aber dennoch alle wahr. Die Autoren möchten aus Sicherheitsgründen anonym bleiben (es sind Maik und Thomas).</p>').appendTo("#müsli").css("color" ,"#f0effa").css("margin-left", "1em").css("margin-top","1em");
  //videoseinstellungen   
-$(document).ready(function(){
+
     $(".video").after("<div class=\'buttun\'><img src=\'../Media/play.png\'class=\'bild1\'/><img src=\'../Media/pause.png\' class=\'bild2\'/><img src=\'../Media/left.png\' class=\'bild3\'/></div>");
     $(".buttun").after("<div class=\'sound\'><img src=\'../Media/sound.png\'class=\'bild4\'/><img src=\'../Media/mute.png\' class=\'bild5\'/></div>");
     $(".sound").after("<div class=\'gabe\'></div>");
@@ -489,5 +489,4 @@ $(document).ready(function(){
     });
 
  });
-});
 });
