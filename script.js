@@ -432,11 +432,11 @@ $(".videocontainer").each(function () {
 
     soundBtn.click(function(){
         if(muteBild.is(":hidden")){
-            $(".video").prop('muted', true);
+            video.prop('muted', true);
             soundBild.hide();
             muteBild.show();
         }else if(soundBild.is(":hidden")){
-            $(".video").prop('muted', false);
+            video.prop('muted', false);
             soundBild.show();
             muteBild.hide();
         }
