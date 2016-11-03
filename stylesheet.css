@@ -14,26 +14,36 @@ html{
     margin-top: 4em;
 }
 
-.gabe{
-    width: 200px;
+.gabe {
+    width: 120px;
     height: 70px;
     border-radius: 20em;
     background-color: #6c524d;
+    vertical-align: middle;
+    line-height: 70px;
     text-align: center;
-    padding-top: 5px;
+    padding-right: 1em;
+    font-size: 1.3em;
+    padding-top: 0.1px;
+    margin-top: -3.35em;
     box-shadow: 5px 2px 5px #888888;
-    margin-left: 5em;
+    margin-left: 23.5em;
 }
 
-.gabe2{
-    width: 200px;
+.gabe2 {
+    vertical-align: middle;
+    line-height: 70px;
+    width: 120px;
     height: 70px;
+    padding-top: 0.1px;
     border-radius: 20em;
     background-color: #6c524d;
     text-align: center;
-    padding-top: 5px;
+    margin-top: -3.6em;
     box-shadow: 5px 2px 5px #888888;
-    margin-left: 5em;
+    margin-left: 15.5em;
+    font-size: 1.3em;
+    padding-right: 1em;
 }
 
 .sound{
