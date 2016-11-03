@@ -432,7 +432,7 @@ $(document).ready(function(){
     var anzeige2 = $(this).find("#dauer2");
     var laenge = video.duration;
     
-    $("#dauer").text("00:00);    
+    $("#dauer").text("00:00");    
     video.on('loadedmetadata', function() {
         if(Math.round(video[0].duration) < 10){
          $(anzeige2).text("00:0"+Math.round(video[0].duration));
