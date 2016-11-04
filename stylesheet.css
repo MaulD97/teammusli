@@ -16,11 +16,11 @@ html{
 
 .gabe {
     width: 60px;
-    height: 60px;
+    height: 40px;
     border-radius: 0.em;
     background-color: #6c524d;
     vertical-align: middle;
-    line-height: 70px;
+    line-height: 40px;
     text-align: center;
     padding-right: 1.6em;
     font-size: 1.1em;
@@ -31,7 +31,7 @@ html{
 
 .gabe2 {
     width: 60px;
-    height: 60px;
+    height: 40px;
     padding-top: 10px;
     border-radius: 0em;
     background-color: #6c524d;
@@ -40,6 +40,8 @@ html{
     margin-left: 18em;
     font-size: 1.1em;
     padding-right: 1.6em;
+    vertical-align: middle;
+    line-height: 40px;
 }
 
 .sound{
