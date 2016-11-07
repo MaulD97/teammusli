@@ -435,7 +435,7 @@ $(document).ready(function(){
        }else if(gesch == 2){
             video.prop("playbackRate", 2); 
             gesch = 1;   
-       }else if(gesch == 1a){
+       }else if(gesch == 1){
             video.prop("playbackRate", 2); 
             gesch = 0.5;   
        }
