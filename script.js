@@ -417,7 +417,7 @@ $(document).ready(function(){
     $("<p id=\'dauer\'>00:00</p>").prependTo(".gabe2");
     $("<p id=\'dauer2\'>00:00</p>").prependTo(".gabe");
     $(".gabe2").after("<input class=\'fullscreen\' type=\'number\'></div>");
-    $(".gabe2").after("<div class=\'ok\'>Ok</div>");
+    $(".gabe2").after("<div class=\'ok\'>Springe zu</div>");
     
     $(".videocontainer").each(function () {
     
