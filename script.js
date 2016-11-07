@@ -455,8 +455,10 @@ $(document).ready(function(){
         }
     });    
         
-    eh.text(1);    
-    video.prop("playbackRate", eh);    
+    eh.text("1");    
+    if(eh > 0){    
+        video.prop("playbackRate", eh);    
+    }
         
     soundBild.show();
     muteBild.hide();
