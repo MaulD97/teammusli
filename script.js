@@ -437,7 +437,7 @@ $(document).ready(function(){
     var modus = $(this).find(".fullscreen");
     var ok = $(this).find(".ok");
     var x2 = $(this).find(".x2");
-    var x0.5 = $(this).find("x0.5");
+    var x05 = $(this).find("x0.5");
     var laenge = video.duration;
     
     $("#dauer").text("00:00");    
@@ -473,7 +473,7 @@ $(document).ready(function(){
        video.prop("playbackRate", 2); 
     });
         
-    x0.5.click(function(){
+    x05.click(function(){
        video.prop("playbackRate", 0.5); 
     });
         
