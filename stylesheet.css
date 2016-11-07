@@ -29,6 +29,10 @@ input.fullscreen {
     padding-left: 7px;
 }
 
+.ok:hover{
+    cursor: pointer;
+}
+
 .gabe {
     width: 60px;
     height: 70px;
