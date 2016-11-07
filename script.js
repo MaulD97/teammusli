@@ -455,7 +455,7 @@ $(document).ready(function(){
         }
     });    
     
-    eh.val(1);    
+    eh.val(2);    
     if(eh > 0){    
        video.prop("playbackRate", eh.val());    
     }    
