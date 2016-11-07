@@ -419,7 +419,7 @@ $(document).ready(function(){
     $(".gabe2").after("<input class=\'fullscreen\' type=\'number\'></div>");
     $(".gabe2").after("<div class=\'ok\'>Springe zu</div>");
     $(".gabe2").after("<div class=\'x2\'>x2</div>");
-    $(".gabe2").after("<div class=\'x0.5\'>x0.5</div>");
+    $(".gabe2").after("<div class=\'x05\'>x0.5</div>");
     
     $(".videocontainer").each(function () {
     
@@ -437,7 +437,7 @@ $(document).ready(function(){
     var modus = $(this).find(".fullscreen");
     var ok = $(this).find(".ok");
     var x2 = $(this).find(".x2");
-    var x05 = $(this).find("x0.5");
+    var x05 = $(this).find("x05");
     var laenge = video.duration;
     
     $("#dauer").text("00:00");    
