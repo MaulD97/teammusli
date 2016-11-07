@@ -28,11 +28,19 @@ input.fullscreen {
 
 .ok {
     margin-left: 32em;
-    margin-top: -5em;
+    margin-top: -6.5em;
     background-color: #6c524d;
     width: 5.6em;
     height: 1.3em;
     padding-left: 7px;
+}
+
+.x2 {
+    margin-left: 33.35em;
+    background-color: #6c524d;
+    width: 1.8em;
+    padding-left: 7px;
+    margin-bottom: 1em;
 }
 
 .ok:hover{
@@ -50,7 +58,7 @@ input.fullscreen {
     padding-right: 1.6em;
     font-size: 1.1em;
     padding-top: 10px;
-    margin-top: -2.78em;
+    margin-top: -3.36em;
     margin-left: 22.5em;
 }
 
