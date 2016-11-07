@@ -485,7 +485,7 @@ $(document).ready(function(){
             pauseBild.show();
             replayBild.hide();   
             if(eh > 0){    
-                video.prop("playbackRate", eh);    
+                video.prop("playbackRate", eh.val());    
             }
         }else if(playBild.is(":hidden")){
             plainVideo.pause();
