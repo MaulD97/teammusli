@@ -423,18 +423,18 @@ $(document).ready(function(){
     var ok = $(this).find(".ok");
     var x2 = $(this).find(".x2");
     var laenge = video.duration;
-    var gesch = 0.5;
+    var gesch = 1;
         
     x2.click(function(){
-        if(gesch == 0.5){
+        if(gesch == 1){
             video.prop("playbackRate", 2);
             x2.text("x2");
             gesch = 2;
-        }else if(gesch == 2){
+        }else if(gesch == 0.5){
             video.prop("playbackRate", 1);   
             x2.text("x1");
             gesch = 1;
-        }else if(gesch == 1){
+        }else if(gesch == 2){
             video.prop("playbackRate", 0.5);
             x2.text("x0.5");
             gesch = 0.5;
