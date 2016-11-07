@@ -436,7 +436,7 @@ $(document).ready(function(){
             gesch = 1;
         }else if(gesch == 1){
             video.prop("playbackRate", 0.5);
-            x2-text("x0.5");
+            x2.text("x0.5");
             gesch = 0.5;
         }
     });       
