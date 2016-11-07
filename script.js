@@ -454,6 +454,11 @@ $(document).ready(function(){
             $(anzeige).text("00:"+Math.round(video[0].currentTime));  
         }
     });    
+    
+    eh.val(1);    
+    if(eh > 0){    
+       video.prop("playbackRate", eh.val());    
+    }    
         
     soundBild.show();
     muteBild.hide();
@@ -484,9 +489,6 @@ $(document).ready(function(){
             playBild.hide();
             pauseBild.show();
             replayBild.hide();   
-            if(eh > 0){    
-                video.prop("playbackRate", eh.val());    
-            }
         }else if(playBild.is(":hidden")){
             plainVideo.pause();
             playBild.show();
