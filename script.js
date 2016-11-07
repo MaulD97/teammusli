@@ -436,6 +436,8 @@ $(document).ready(function(){
     var anzeige2 = $(this).find("#dauer2");
     var modus = $(this).find(".fullscreen");
     var ok = $(this).find(".ok");
+    var x2 = $(this).find(".x2");
+    var x0.5 = $(this).find("x0.5");
     var laenge = video.duration;
     
     $("#dauer").text("00:00");    
@@ -466,6 +468,14 @@ $(document).ready(function(){
     ok.click(function(){
         video.prop("currentTime", modus.val());
     });    
+        
+    x2.click(function(){
+       video.prop("playbackRate", 2); 
+    });
+        
+    x0.5.click(function(){
+       video.prop("playbackRate", 0.5); 
+    });
         
     soundBtn.click(function(){
         if(muteBild.is(":hidden")){
