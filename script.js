@@ -433,8 +433,10 @@ $(document).ready(function(){
            video.prop("playbackRate", 2); 
            gesch = 2;
        }else if(gesch == 2){
+            video.prop("playbackRate", 2); 
             gesch = 1;   
-       }else {
+       }else if(gesch == 1a){
+            video.prop("playbackRate", 2); 
             gesch = 0.5;   
        }
     });    
