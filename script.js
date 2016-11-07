@@ -463,7 +463,7 @@ $(document).ready(function(){
            gesch = 2;
        }else if(gesch < 1 && gesch > 0.5){
             gesch = 1;   
-       }else if(gesch < 1 && <= 0.5){
+       }else if(gesch < 1 && gesch <= 0.5){
             gesch = 0.5;   
        }
     });
