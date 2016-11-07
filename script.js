@@ -393,19 +393,6 @@ $(document).ready(function(){
     }
     });
 
-    /*$(function(){
-    $(window).scroll(function() {
-        var $myDiv = $('.kreis');
-        var st = $(this).scrollTop();
-        $myDiv.height( st );
-        if( st == 0 ) {
-            $myDiv.hide();
-        } else {
-            $myDiv.show();
-        }
-    }).scroll();
-});*/
-
     $('<h3><a href=\'../subpages/stories\' class = \'link\'">Verrückte Geschichten</a></h3>').appendTo("#müsli").css("margin-top", "2em");
     $('<p>Hier gehts zu den Geschichten der Jungs. Eine seltsamer als die andere aber dennoch alle wahr. Die Autoren möchten aus Sicherheitsgründen anonym bleiben (es sind Maik und Thomas).</p>').appendTo("#müsli").css("color" ,"#f0effa").css("margin-left", "1em").css("margin-top","1em");
  //videoseinstellungen   
@@ -471,11 +458,13 @@ $(document).ready(function(){
     });          
         
     x2.click(function(){
-       if(gesch != 2){
-           video.prop("playbackRate", 0.5); 
+       if(gesch < 2 && gesch > 1){
+           video.prop("playbackRate", 2); 
            gesch = 2;
-       }else if(gesch == 2){
+       }else if(gesch < 1 && gesch > 0.5){
             gesch = 1;   
+       }else if(gesch < 1 && <= 0.5){
+            gesch = 0.5;   
        }
     });
         
