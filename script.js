@@ -455,11 +455,6 @@ $(document).ready(function(){
         }
     });    
         
-    eh.text("1");    
-    if(eh > 0){    
-        video.prop("playbackRate", eh);    
-    }
-        
     soundBild.show();
     muteBild.hide();
     playBild.show();
@@ -488,7 +483,10 @@ $(document).ready(function(){
             plainVideo.play();
             playBild.hide();
             pauseBild.show();
-            replayBild.hide();
+            replayBild.hide();   
+            if(eh > 0){    
+                video.prop("playbackRate", eh);    
+            }
         }else if(playBild.is(":hidden")){
             plainVideo.pause();
             playBild.show();
