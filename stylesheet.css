@@ -43,6 +43,10 @@ input.fullscreen {
     margin-bottom: 1em;
 }
 
+.x2:hover{
+    cursor: pointer;   
+}
+
 .ok:hover{
     cursor: pointer;
 }
