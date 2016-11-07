@@ -428,7 +428,7 @@ $(document).ready(function(){
     var x05 = $(this).find("x05");
     var x1 = $(this).find("x1");
     var laenge = video.duration;
-    var gesch = 0;
+    var gesch = 0.5;
     
     $("#dauer").text("00:00");    
     video.on('loadedmetadata', function() {
