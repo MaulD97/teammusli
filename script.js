@@ -406,8 +406,6 @@ $(document).ready(function(){
     $(".gabe2").after("<input class=\'fullscreen\' type=\'number\'></div>");
     $(".gabe2").after("<div class=\'ok\'>Springe zu</div>");
     $(".gabe2").after("<div class=\'x2\'>x2</div>");
-    $(".gabe2").after("<div class=\'x05\'>x0.5</div>");
-    $(".gabe2").after("<div class=\'x1\'>x1</div>");
     $(".videocontainer").each(function () {
     
     var video = $(this).find(".video");
@@ -424,29 +422,24 @@ $(document).ready(function(){
     var modus = $(this).find(".fullscreen");
     var ok = $(this).find(".ok");
     var x2 = $(this).find(".x2");
-    var x05 = $(this).find("x05");
-    var x1 = $(this).find("x1");
     var laenge = video.duration;
     var gesch = 0.5;
         
     x2.click(function(){
-        if(gesch != 2){
-           video.prop("playbackRate", 2);
+        if(gesch == 0.5){
+            video.prop("playbackRate", 2);
+            x2.text("x2");
+            gesch = 2;
+        }else if(gesch == 2){
+            video.prop("playbackRate", 1);   
+            x2.text("x1");
+            gesch = 1;
+        }else if(gesch == 1){
+            video.prop("playbackRate", 0.5);
+            x2-text("x0.5");
+            gesch = 0.5;
         }
-    });
-    x05.click(function(){
-        if(gesch != 0.5){
-            video.ptop("playbackRate",0.5);
-        }
-    });
-    x1.click(function(){
-        if(gesch != 1){
-            video.ptop("playbackRate", 1);
-        }
-    });
-        
-        
-        
+    });       
         
     $("#dauer").text("00:00");    
     video.on('loadedmetadata', function() {
