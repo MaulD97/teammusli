@@ -427,16 +427,22 @@ $(document).ready(function(){
     var x05 = $(this).find("x05");
     var x1 = $(this).find("x1");
     var laenge = video.duration;
-    
+    var gesch = 0.5;
         
     x2.click(function(){
+        if(gesch != 2){
            video.prop("playbackRate", 2);
+        }
     });
     x05.click(function(){
+        if(gesch != 0.5){
             video.ptop("playbackRate",0.5);
+        }
     });
     x1.click(function(){
+        if(gesch != 1){
             video.ptop("playbackRate", 1);
+        }
     });
         
         
