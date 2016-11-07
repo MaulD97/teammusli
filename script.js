@@ -441,6 +441,7 @@ $(document).ready(function(){
     var x05 = $(this).find("x05");
     var x1 = $(this).find("x1");
     var laenge = video.duration;
+    var gesch = 1;
     
     $("#dauer").text("00:00");    
     video.on('loadedmetadata', function() {
@@ -470,15 +471,24 @@ $(document).ready(function(){
     });    
         
     x1.click(function(){
-       video.prop("playbackRate", 1); 
+       if(gesch != 1){
+           video.prop("playbackRate", 1); 
+           gesch = 1;
+       }
     });    
         
     x2.click(function(){
-       video.prop("playbackRate", 2); 
+       if(gesch != 2){
+           video.prop("playbackRate", 2); 
+           gesch = 2;
+       }
     });
         
     x05.click(function(){
-       video.prop("playbackRate", 0.5); 
+       if(gesch != 0.5){
+           video.prop("playbackRate", 0.5); 
+           gesch = 0.5;
+       }
     });
         
     soundBtn.click(function(){
