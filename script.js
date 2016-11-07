@@ -434,10 +434,12 @@ $(document).ready(function(){
            gesch = 2;
        }else if(gesch == 2){
             gesch = 1;   
-       }else if(gesch == 1){
+       }else {
             gesch = 0.5;   
        }
     });    
+        
+        
         
         
     $("#dauer").text("00:00");    
