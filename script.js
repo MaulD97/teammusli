@@ -468,30 +468,14 @@ $(document).ready(function(){
 
     ok.click(function(){
         video.prop("currentTime", modus.val());
-    });    
-        
-     x1.text(gesch);   
-        
-    x1.click(function(){
-       if(gesch != 1){
-           video.prop("playbackRate", 1); 
-           gesch = 1;
-       }
-    });    
+    });          
         
     x2.click(function(){
        if(gesch != 2){
-           video.prop("playbackRate", 2); 
+           video.prop("playbackRate", 0.5); 
            gesch = 2;
        }else if(gesch == 2){
             gesch = 1;   
-       }
-    });
-        
-    x05.click(function(){
-       if(gesch != 0.5){
-           video.prop("playbackRate", 0.5); 
-           gesch = 0.5;
        }
     });
         
