@@ -443,7 +443,7 @@ $(document).ready(function(){
     var laenge = video.duration;
     var gesch = 1;
     
-    $("#dauer").text("00:00");    
+    $("#dauer").text(gesch);    
     video.on('loadedmetadata', function() {
         if(Math.round(video[0].duration) < 10){
          $(anzeige2).text("00:0"+Math.round(video[0].duration));
@@ -459,7 +459,7 @@ $(document).ready(function(){
             $(anzeige).text("00:"+Math.round(video[0].currentTime));  
         }
     });    
-        
+    
     soundBild.show();
     muteBild.hide();
     playBild.show();
