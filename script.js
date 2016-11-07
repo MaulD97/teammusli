@@ -418,7 +418,7 @@ $(document).ready(function(){
     $("<p id=\'dauer2\'>00:00</p>").prependTo(".gabe");
     $(".gabe2").after("<input class=\'fullscreen\' type=\'number\'></div>");
     $(".gabe2").after("<div class=\'ok\'>Springe zu</div>");
-    $(".gabe2").after("<input class=\'eh\' type=\'number\'>1</div>");
+    $(".gabe2").after("<input class=\'eh\' type=\'number\'></div>");
     
     $(".videocontainer").each(function () {
     
@@ -455,6 +455,7 @@ $(document).ready(function(){
         }
     });    
         
+    eh.text(1);    
     video.prop("playbackRate", eh);    
         
     soundBild.show();
