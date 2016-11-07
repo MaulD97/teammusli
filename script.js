@@ -458,12 +458,12 @@ $(document).ready(function(){
     });          
         
     x2.click(function(){
-       if(gesch < 2 && gesch > 1){
+       if(gesch == 0.5){
            video.prop("playbackRate", 2); 
            gesch = 2;
-       }else if(gesch < 1 && gesch > 0.5){
+       }else if(gesch == 2){
             gesch = 1;   
-       }else if(gesch < 1 && gesch <= 0.5){
+       }else if(gesch == 1){
             gesch = 0.5;   
        }
     });
