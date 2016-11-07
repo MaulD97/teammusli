@@ -418,6 +418,7 @@ $(document).ready(function(){
     $("<p id=\'dauer2\'>00:00</p>").prependTo(".gabe");
     $(".gabe2").after("<input class=\'fullscreen\' type=\'number\'></div>");
     $(".gabe2").after("<div class=\'ok\'>Springe zu</div>");
+    $(".gabe2").after("<input class=\'eh\' type=\'number\'>1</div>");
     
     $(".videocontainer").each(function () {
     
@@ -434,6 +435,7 @@ $(document).ready(function(){
     var anzeige2 = $(this).find("#dauer2");
     var modus = $(this).find(".fullscreen");
     var ok = $(this).find(".ok");
+    var eh = $(this).find(".eh");
     var laenge = video.duration;
     
     $("#dauer").text("00:00");    
@@ -452,6 +454,8 @@ $(document).ready(function(){
             $(anzeige).text("00:"+Math.round(video[0].currentTime));  
         }
     });    
+        
+    video.prop("playbackRate", eh);    
         
     soundBild.show();
     muteBild.hide();
@@ -482,7 +486,6 @@ $(document).ready(function(){
             playBild.hide();
             pauseBild.show();
             replayBild.hide();
-            video.PlaybackRate = 0.1;
         }else if(playBild.is(":hidden")){
             plainVideo.pause();
             playBild.show();
