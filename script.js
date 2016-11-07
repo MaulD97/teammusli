@@ -482,7 +482,7 @@ $(document).ready(function(){
             playBild.hide();
             pauseBild.show();
             replayBild.hide();
-            video.defaultPlaybackRate = 0.5;
+            video.PlaybackRate = 0.1;
         }else if(playBild.is(":hidden")){
             plainVideo.pause();
             playBild.show();
