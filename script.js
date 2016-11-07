@@ -420,6 +420,7 @@ $(document).ready(function(){
     $(".gabe2").after("<div class=\'ok\'>Springe zu</div>");
     $(".gabe2").after("<div class=\'x2\'>x2</div>");
     $(".gabe2").after("<div class=\'x05\'>x0.5</div>");
+    $(".gabe2").after("<div class=\'x1\'>x1</div>");
     
     $(".videocontainer").each(function () {
     
@@ -438,6 +439,7 @@ $(document).ready(function(){
     var ok = $(this).find(".ok");
     var x2 = $(this).find(".x2");
     var x05 = $(this).find("x05");
+    var x1 = $(this).find("x1");
     var laenge = video.duration;
     
     $("#dauer").text("00:00");    
@@ -467,6 +469,10 @@ $(document).ready(function(){
 
     ok.click(function(){
         video.prop("currentTime", modus.val());
+    });    
+        
+    x1.click(function(){
+       video.prop("playbackRate", 1); 
     });    
         
     x2.click(function(){
