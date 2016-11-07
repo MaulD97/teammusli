@@ -458,8 +458,6 @@ $(document).ready(function(){
             $(anzeige).text("00:"+Math.round(video[0].currentTime));  
         }
     });    
-            
-    video.prop("playbackRate", 1);       
         
     soundBild.show();
     muteBild.hide();
