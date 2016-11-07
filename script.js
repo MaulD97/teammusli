@@ -420,7 +420,7 @@ $(document).ready(function(){
     $(".gabe2").after("<div class=\'ok\'>Springe zu</div>");
     $(".gabe2").after("<div class=\'x2\'>x2</div>");
     $(".gabe2").after("<div class=\'x05\'>x0.5</div>");
-    $(".gabe2").after("<div class=\'x1\'>x1</div>");
+    $(".gabe2").after("<div class=\'x1\'</div>");
     
     $(".videocontainer").each(function () {
     
