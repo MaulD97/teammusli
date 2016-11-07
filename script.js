@@ -481,6 +481,8 @@ $(document).ready(function(){
        if(gesch != 2){
            video.prop("playbackRate", 2); 
            gesch = 2;
+       }else if(gesch == 2){
+            gesch = 1;   
        }
     });
         
