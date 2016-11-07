@@ -441,9 +441,9 @@ $(document).ready(function(){
     var x05 = $(this).find("x05");
     var x1 = $(this).find("x1");
     var laenge = video.duration;
-    var gesch = 1;
+    var gesch;
     
-    $("#dauer").text(gesch);    
+    $("#dauer").text("00:00");    
     video.on('loadedmetadata', function() {
         if(Math.round(video[0].duration) < 10){
          $(anzeige2).text("00:0"+Math.round(video[0].duration));
@@ -469,6 +469,8 @@ $(document).ready(function(){
     ok.click(function(){
         video.prop("currentTime", modus.val());
     });    
+        
+     x1.text(gesch);   
         
     x1.click(function(){
        if(gesch != 1){
