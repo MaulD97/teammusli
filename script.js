@@ -406,6 +406,8 @@ $(document).ready(function(){
     $(".gabe2").after("<input class=\'fullscreen\' type=\'number\'></div>");
     $(".gabe2").after("<div class=\'ok\'>Springe zu</div>");
     $(".gabe2").after("<div class=\'x2\'>x2</div>");
+    $(".gabe2").after("<div class=\'x05\'>x0.5</div>");
+    $(".gabe2").after("<div class=\'x1\'>x1</div>");
     $(".videocontainer").each(function () {
     
     var video = $(this).find(".video");
@@ -425,21 +427,17 @@ $(document).ready(function(){
     var x05 = $(this).find("x05");
     var x1 = $(this).find("x1");
     var laenge = video.duration;
-    var gesch = 0.5;
     
         
     x2.click(function(){
-       if(gesch == 0.5){
-           video.prop("playbackRate", 2); 
-           gesch = 2;
-       }else if(gesch == 2){
-            video.prop("playbackRate", 1); 
-            gesch = 1;   
-       }else if(gesch == 1){
-            video.prop("playbackRate", 0.5); 
-            gesch = 0.5;   
-       }
-    });    
+           video.prop("playbackRate", 2);
+    });
+    x05.click(function(){
+            video.ptop("playbackRate",0.5);
+    });
+    x1.click(function(){
+            video.ptop("playbackRate", 1);
+    });
         
         
         
