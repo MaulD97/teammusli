@@ -455,10 +455,7 @@ $(document).ready(function(){
         }
     });    
     
-    eh.val(2);    
-    if(eh > 0){    
-       video.prop("playbackRate", eh.val());    
-    }    
+    eh.val(2);   
         
     soundBild.show();
     muteBild.hide();
@@ -468,6 +465,9 @@ $(document).ready(function(){
 
     ok.click(function(){
         video.prop("currentTime", modus.val());
+        if(eh > 0){    
+            video.prop("playbackRate", eh.val());    
+        } 
     });    
         
     soundBtn.click(function(){
